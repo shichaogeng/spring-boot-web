@@ -3,8 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.dongnao.jack</groupId>
 	<artifactId>spring-boot-web</artifactId>
-	<packaging>jar</packaging>
 	<!-- <packaging>jar</packaging> -->
+	 <packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-web Maven Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -102,8 +102,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-redis</artifactId>
 		</dependency>
-		<!-- Spring Boot jetty 依赖 <dependency> <groupId>org.springframework.boot</groupId> 
-			<artifactId>spring-boot-starter-jetty</artifactId> </dependency> -->
+		<!-- Spring Boot jetty 依赖  --><dependency> <groupId>org.springframework.boot</groupId> 
+			<artifactId>spring-boot-starter-jetty</artifactId> </dependency>
 
 		<dependency>
 			<groupId>org.apache.shiro</groupId>

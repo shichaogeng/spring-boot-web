@@ -1,40 +1,33 @@
-package com.dongnao.jack.config;
+package com.dongnao.jack.controller;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.embedded.ServletRegistrationBean;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Import;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.dongnao.jack.dynamicDataSource.DynamicDataSourceRegister;
 import com.dongnao.jack.servlet.JackServlet;
 
+/** 
+ * @Description springboot启动器 
+ * @ClassName   SpringBootTest 
+ * @Date        2017年8月27日 下午3:38:36 
+ * @Author      dongnao-jack
+ */
 /**
  * 
   @SpringBootApplication 相当于@Configuration,@EnableAutoConfiguration,@ComponentScan
+  (其中，@EnableAutoConfiguration会扫描带有@Configuration的类
+  @EnableAutoConfiguration 注解初始化各个组件配置 )
  */
 @SpringBootApplication(scanBasePackages = {"com.dongnao.jack"}, exclude = {})
 //扫描工程中的Servlet、Filter、Listener
 @ServletComponentScan(basePackages = {"com.dongnao.jack"})
 //mybatis框架中的dao扫描
 @MapperScan("com.dongnao.jack.dao")
-//注册动态多数据源
-@Import({DynamicDataSourceRegister.class})
-//启注解事务管理，等同于xml配置方式的 <tx:annotation-driven />
-@EnableTransactionManagement
-/**
- * 
- * @Description SpringBootServletInitializer继承它的目的是为了打war
- * @ClassName   SpringBootTest 
- * @Date        2017年8月31日 下午10:38:55 
- * @Author      动脑学院-jack
- */
-public class SpringBootTest extends SpringBootServletInitializer {
+//@Import({DynamicDataSourceRegister.class})
+public class SpringBootTest {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootTest.class, args);
     }
@@ -48,12 +41,6 @@ public class SpringBootTest extends SpringBootServletInitializer {
     @Bean
     public ServletRegistrationBean servletRegistrationBean() {
         return new ServletRegistrationBean(new JackServlet(), "/jack/*");
-    }
-    
-    @Override
-    protected SpringApplicationBuilder configure(
-            SpringApplicationBuilder builder) {
-        return builder.sources(this.getClass());
     }
     
 }
