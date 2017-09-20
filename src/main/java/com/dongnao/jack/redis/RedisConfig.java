@@ -15,7 +15,7 @@ import org.springframework.data.redis.core.RedisTemplate;
  * @Description redis的缓存配置类，主要配置1、key的生成策略 2、缓存管理规则 
  * @ClassName   RedisConfig 
  * @Date        2017年8月30日 下午2:06:27 
- * @Author      动脑学院-jack
+ * @Author      dongnao-jack
  */
 
 @Configuration

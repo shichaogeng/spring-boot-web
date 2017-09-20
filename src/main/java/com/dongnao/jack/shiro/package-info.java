@@ -4,14 +4,14 @@
  * @Package     com.dongnao.jack.shiro 
  * @Version     V1.0 
  * @Date        2017年8月30日 下午7:22:41 
- * @Author      动脑学院-jack 
+ * @Author      dongnao-jack 
  */
 
 /** 
  * @Description TODO 
  * @ClassName   package-info 
  * @Date        2017年8月30日 下午7:22:41 
- * @Author      动脑学院-jack
+ * @Author      dongnao-jack
  */
 
 package com.dongnao.jack.shiro;

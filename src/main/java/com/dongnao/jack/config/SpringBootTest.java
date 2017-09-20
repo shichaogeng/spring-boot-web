@@ -32,7 +32,7 @@ import com.dongnao.jack.servlet.JackServlet;
  * @Description SpringBootServletInitializer继承它的目的是为了打war
  * @ClassName   SpringBootTest 
  * @Date        2017年8月31日 下午10:38:55 
- * @Author      动脑学院-jack
+ * @Author      dongnao-jack
  */
 public class SpringBootTest extends SpringBootServletInitializer {
     public static void main(String[] args) {

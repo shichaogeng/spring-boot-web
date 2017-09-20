@@ -36,7 +36,7 @@ import com.dongnao.jack.service.CommonService;
  * @Description TODO 
  * @ClassName   JackController 
  * @Date        2017年8月28日 下午2:02:37 
- * @Author      动脑学院-jack
+ * @Author      dongnao-jack
  */
 @Controller
 /**

@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Bean;
  * @Description shiro配置加载类 
  * @ClassName   ShiroConfig 
  * @Date        2017年8月30日 下午7:23:00 
- * @Author      动脑学院-jack
+ * @Author      dongnao-jack
  */
 //@Configuration
 public class ShiroConfig {

@@ -8,7 +8,7 @@ import javax.servlet.annotation.WebListener;
  * @Description 自定义监听器 
  * @ClassName   JackListener 
  * @Date        2017年8月28日 下午2:31:18 
- * @Author      动脑学院-jack
+ * @Author      dongnao-jack
  */
 
 @WebListener

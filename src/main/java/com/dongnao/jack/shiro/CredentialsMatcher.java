@@ -9,7 +9,7 @@ import org.apache.shiro.authc.credential.SimpleCredentialsMatcher;
  * @Description 这个类进行秘密的校验 
  * @ClassName   CredentialsMatcher 
  * @Date        2017年8月30日 下午9:17:29 
- * @Author      动脑学院-jack
+ * @Author      dongnao-jack
  */
 public class CredentialsMatcher extends SimpleCredentialsMatcher {
     

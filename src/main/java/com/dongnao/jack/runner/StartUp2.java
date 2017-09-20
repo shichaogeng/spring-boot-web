@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @Description 启动加载数据 
  * @ClassName   StartUp2 
  * @Date        2017年8月28日 下午4:01:49 
- * @Author      动脑学院-jack
+ * @Author      dongnao-jack
  */
 
 @Component

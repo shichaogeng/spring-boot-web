@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
  * @Description 自定义的Serlvlet过滤器 
  * @ClassName   JackFilter 
  * @Date        2017年8月28日 下午2:29:50 
- * @Author      动脑学院-jack
+ * @Author      dongnao-jack
  */
 @WebFilter(filterName = "jackFilter", urlPatterns = "/*")
 public class JackFilter implements Filter {

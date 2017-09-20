@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  * @Description 带 @WebServlet注解的Servlet注册需要@ServletComponentScan注解的扫描
  * @ClassName   JeffServlet 
  * @Date        2017年8月28日 下午2:17:01 
- * @Author      动脑学院-jack
+ * @Author      dongnao-jack
  */
 @WebServlet(urlPatterns = "/jeff/*")
 public class JeffServlet extends HttpServlet {

@@ -24,7 +24,7 @@ import com.dongnao.jack.service.UserService;
  * @Description AuthRealm完成根据用户名去数据库的查询,并且将用户信息放入shiro中,供第二个类调用.CredentialsMatcher,完成对于密码的校验.其中用户的信息来自shiro 
  * @ClassName   AuthRealm 
  * @Date        2017年8月30日 下午9:05:03 
- * @Author      动脑学院-jack
+ * @Author      dongnao-jack
  */
 public class AuthRealm extends AuthorizingRealm {
     @Autowired
